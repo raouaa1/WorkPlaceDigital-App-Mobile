@@ -1,0 +1,3 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#33EE3919"/> <!-- rgba(197, 43, 16, 0.2) → hex avec alpha -->
+</shape>

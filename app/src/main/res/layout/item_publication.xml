@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publicationItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    android:elevation="3dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Auteur -->
+    <TextView
+        android:id="@+id/textAuteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Contenu -->
+    <TextView
+        android:id="@+id/textContenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Image publication -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Vidéo publication -->
+    <FrameLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp">
+
+        <!-- Miniature vidéo -->
+        <ImageView
+            android:id="@+id/videoThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="#000"
+            android:contentDescription="Miniature vidéo" />
+
+        <!-- Vidéo -->
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Nombre de likes -->
+    <TextView
+        android:id="@+id/textLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d32f2f"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Boutons actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="❤️ Aimer"
+            android:textColor="#d32f2f"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✏️ Modifier"
+            android:textColor="#000"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🗑️ Supprimer"
+            android:textColor="#000"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/btnCommentaires"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💬 Commentaires"
+            android:textColor="#000"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- RecyclerView pour commentaires -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCommentaires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:padding="4dp" />
+</LinearLayout>

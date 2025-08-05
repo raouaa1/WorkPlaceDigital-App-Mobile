@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_background"
+        android:elevation="4dp"
+        android:title="Signalement 🚨"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- Titre avant l'EditText -->
+    <TextView
+        android:id="@+id/textViewTitreSignalement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voulez-vous écrire votre signalement ?"
+        android:textSize="18sp"
+        android:textColor="#8B0000"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextMotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Écrivez votre motif de signalement"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minLines="3"
+        android:maxLines="6"
+        android:gravity="top|start"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/buttonValiderSignalement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:backgroundTint="#8B0000"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "834534682892",
+    "project_id": "workplacedigitalmobile",
+    "storage_bucket": "workplacedigitalmobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834534682892:android:a8c6cd43ffe2da9a50d929",
+        "android_client_info": {
+          "package_name": "workplacedigitalooredoo.tn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj0pf7GCXKAzy9KIPVWd9ZtpChk34J10I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

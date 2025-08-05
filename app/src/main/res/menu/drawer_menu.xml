@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Accueil"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/nav_actualites"
+        android:title="Actualités"
+        android:icon="@drawable/ic_news" />
+    <item
+        android:id="@+id/nav_friends"
+        android:title="Amis"
+        android:icon="@drawable/ic_friends" />
+    <item
+        android:id="@+id/nav_groups"
+        android:title="Groupes"
+        android:icon="@drawable/ic_groups" />
+    <item
+        android:id="@+id/nav_evenements"
+        android:title="Événements"
+        android:icon="@drawable/ic_event" />
+    <item
+        android:id="@+id/nav_chatbot"
+        android:title="Chatbot"
+        android:icon="@drawable/ic_chatbot" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profil"
+        android:icon="@drawable/ic_profile" />
+
+    <!-- Nouveaux items ajoutés -->
+    <item
+        android:id="@+id/nav_collaborateur"
+        android:title="Collaborateur"
+        android:icon="@drawable/ic_collaborator" />
+    <item
+        android:id="@+id/nav_signaler"
+        android:title="Signaler"
+        android:icon="@drawable/ic_signal" />
+    <item
+        android:id="@+id/nav_activites"
+        android:title="Activités"
+        android:icon="@drawable/ic_activity" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Se déconnecter"
+        android:icon="@drawable/ic_logout" />
+</menu>

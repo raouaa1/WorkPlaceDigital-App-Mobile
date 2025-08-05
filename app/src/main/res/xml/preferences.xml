@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Compte">
+
+        <SwitchPreferenceCompat
+            android:key="notif_enable"
+            android:title="Notifications"
+            android:summary="Activer les notifications"/>
+
+        <EditTextPreference
+            android:key="signature"
+            android:title="Signature"
+            android:summary="Signature affichée sous vos messages"
+            android:dialogTitle="Modifier votre signature" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Général">
+
+        <SwitchPreferenceCompat
+            android:key="dark_theme"
+            android:title="Mode sombre"
+            android:summary="Activer ou désactiver le thème sombre"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

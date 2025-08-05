@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Autoriser HTTP clair pour l'IP backend exacte -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">172.19.3.134</domain>
+    </domain-config>
+
+    <!-- Autoriser tout le trafic local (optionnel) -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
